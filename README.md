@@ -4,7 +4,6 @@ This repository contains a collection of R scripts that serve as a base layer fo
 
 ## Table of Contents
 [Automation Reports](https://github.com/manilpit/MMN_R_scripts_to_build_from/tree/main/examples_to_build_from/automation_reporting)<br>
-
 [Data Import](https://github.com/manilpit/MMN_R_scripts_to_build_from/tree/main/examples_to_build_from/data_import)<br>
 [Data Manipulation](https://github.com/manilpit/MMN_R_scripts_to_build_from/tree/main/examples_to_build_from/data_manipulation)<br>
 [Data Visualisation](https://github.com/manilpit/MMN_R_scripts_to_build_from/tree/main/examples_to_build_from/data_visualization)<br>
