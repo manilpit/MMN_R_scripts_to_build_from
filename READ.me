@@ -1,0 +1,75 @@
+# Base Layer of R Scripts for Data Analysis and Automation
+
+This repository contains a collection of R scripts that serve as a base layer for various data analysis, automation, and utility tasks. Each script is designed to be easily adaptable, allowing you to modify and build upon them to suit your specific needs.
+
+## Table of Contents
+
+1. [Web Scraping](#web-scraping)
+2. [API Interaction](#api-interaction)
+3. [Handling Spatial Data](#handling-spatial-data)
+4. [Utility Scripts](#utility-scripts)
+5. [Custom Utility Functions](#custom-utility-functions)
+6. [Logging and Error Handling](#logging-and-error-handling)
+7. [Database Connections](#database-connections)
+
+## Web Scraping
+
+**Script:** `web_scraping.R`
+
+- **Description:** This script demonstrates how to extract data from websites using the `rvest` package. It covers loading a webpage, extracting specific HTML elements, and retrieving text or attribute values from those elements.
+- **Usage:** Adapt this script to scrape data from different websites by modifying the URL and CSS selectors to match the desired elements.
+
+## API Interaction
+
+**Script:** `api_interaction.R`
+
+- **Description:** This script shows how to interact with APIs by making requests and handling JSON responses using the `httr` and `jsonlite` packages. It includes examples of sending GET requests, parsing JSON responses, and manipulating the data for analysis.
+- **Usage:** Customize this script to interact with different APIs by changing the endpoint URLs and handling specific JSON structures.
+
+## Handling Spatial Data
+
+**Script:** `spatial_data_handling.R`
+
+- **Description:** This script provides an overview of handling spatial data in R, including reading and writing shapefiles with the `sf` package and visualizing spatial data using `ggplot2` with `geom_sf()` and the `tmap` package.
+- **Usage:** Use this script to work with geographic data, modify shapefiles, and create visualizations for spatial analysis projects.
+
+## Utility Scripts
+
+**Script:** `file_management.R`
+
+- **Description:** This script demonstrates various file management operations, including listing files, renaming files, moving files, and deleting files using base R functions such as `list.files()`, `file.rename()`, and `file.remove()`.
+- **Usage:** Adapt this script for file and directory automation tasks like organizing files, batch renaming, or cleaning up directories.
+
+## Custom Utility Functions
+
+**Script:** `custom_utility_functions.R`
+
+- **Description:** This script includes a collection of custom utility functions for repetitive tasks, such as cleaning column names, calculating summary statistics, saving plots, moving files, and batch renaming files.
+- **Usage:** Incorporate these utility functions into your scripts to streamline repetitive tasks and improve code readability and maintainability.
+
+## Logging and Error Handling
+
+**Script:** `logging_and_error_handling.R`
+
+- **Description:** This script demonstrates logging script progress using the `log4r` package and handling errors using `tryCatch()`. It includes examples of logging different message levels (INFO, WARN, ERROR) and managing exceptions in custom functions.
+- **Usage:** Use this script as a template to add logging and error handling to your R scripts, making them more robust and easier to debug.
+
+## Database Connections
+
+**Script:** `database_connections.R`
+
+- **Description:** This script shows how to connect to various types of databases, including SQL, NoSQL, and cloud databases, using packages like `DBI`, `RMySQL`, `RSQLite`, `mongolite`, and `odbc`. It covers connecting to MySQL, SQLite, MongoDB, and ODBC-compatible databases.
+- **Usage:** Modify this script to connect to different databases by changing the connection parameters (e.g., host, port, database name, credentials) and writing custom queries to interact with your data.
+
+## Getting Started
+
+Each script is designed to be a starting point for specific data tasks. Feel free to adapt and extend these scripts to fit your unique requirements. Make sure to review the dependencies for each script and install the necessary packages before running them.
+
+## Contributing
+
+If you have additional scripts or improvements to share, please feel free to submit a pull request. Contributions are always welcome!
+
+## License
+
+This repository is licensed under the MIT License. See the `LICENSE` file for more details.
+
