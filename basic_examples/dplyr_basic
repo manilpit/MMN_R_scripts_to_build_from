@@ -1,0 +1,24 @@
+# data_manipulation.R
+
+# Load necessary libraries
+library(dplyr)
+
+# Sample data frame
+data <- data.frame(
+  id = 1:10,
+  value = rnorm(10),
+  category = rep(c("A", "B"), each = 5)
+)
+
+# Filter rows where value is greater than 0
+filtered_data <- data %>%
+  filter(value > 0)
+
+# Summarize data by category
+summary_by_category <- data %>%
+  group_by(category) %>%
+  summarize(mean_value = mean(value), sd_value = sd(value))
+
+# Print results
+print(filtered_data)
+print(summary_by_category)

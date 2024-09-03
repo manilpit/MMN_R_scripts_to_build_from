@@ -1,0 +1,95 @@
+# Data library of examples to build from.
+### 1. **Data Manipulation**
+   - **Data Importing/Exporting:**
+     - Scripts to read and write CSV, Excel, JSON, and databases (e.g., `read.csv()`, `write.csv()`, `readxl::read_excel()`, `jsonlite::fromJSON()`, `DBI::dbReadTable()`).
+   - **Data Cleaning:**
+     - Handling missing values (e.g., `na.omit()`, `tidyr::fill()`).
+     - String manipulation (e.g., `stringr::str_replace_all()`, `stringr::str_extract()`).
+     - Data type conversion (e.g., `as.numeric()`, `as.factor()`).
+   - **Data Transformation:**
+     - Reshaping data (e.g., `tidyr::gather()`, `tidyr::spread()`, `dplyr::pivot_longer()`, `dplyr::pivot_wider()`).
+     - Summarizing data (e.g., `dplyr::summarize()`, `dplyr::group_by()`).
+     - Joining datasets (e.g., `dplyr::left_join()`, `dplyr::inner_join()`).
+
+### 2. **Data Visualization**
+   - **Basic Plotting:**
+     - Base R plots (e.g., `plot()`, `hist()`, `boxplot()`).
+     - `ggplot2` templates for common plots (e.g., scatter plots, bar charts, line plots).
+   - **Advanced Visualization:**
+     - Creating custom themes in `ggplot2`.
+     - Faceting and multi-panel plots (e.g., `ggplot2::facet_wrap()`, `ggplot2::facet_grid()`).
+     - Interactive plots (e.g., `plotly::ggplotly()`).
+
+### 3. **Statistical Analysis**
+   - **Descriptive Statistics:**
+     - Summary statistics (e.g., `summary()`, `dplyr::summarize()`, `skimr::skim()`).
+     - Correlation matrices (e.g., `cor()`, `Hmisc::rcorr()`).
+   - **Hypothesis Testing:**
+     - T-tests, Chi-square tests, ANOVA (e.g., `t.test()`, `chisq.test()`, `aov()`).
+   - **Regression Models:**
+     - Linear and logistic regression (e.g., `lm()`, `glm()`).
+     - Model diagnostics and validation (e.g., `car::vif()`, `broom::tidy()`).
+
+### 4. **Machine Learning**
+   - **Data Preprocessing:**
+     - Train-test split (e.g., `caret::createDataPartition()`).
+     - Feature scaling and normalization (e.g., `scale()`, `caret::preProcess()`).
+   - **Model Building:**
+     - Basic algorithms (e.g., `randomForest::randomForest()`, `e1071::svm()`).
+     - Cross-validation and hyperparameter tuning (e.g., `caret::train()`, `caret::trainControl()`).
+   - **Model Evaluation:**
+     - Confusion matrix and performance metrics (e.g., `caret::confusionMatrix()`, `ROCR::prediction()`).
+
+### 5. **Time Series Analysis**
+   - **Basic Time Series Operations:**
+     - Creating time series objects (e.g., `ts()`, `zoo::zoo()`).
+     - Decomposition and seasonal adjustment (e.g., `forecast::decompose()`, `stats::stl()`).
+   - **Time Series Forecasting:**
+     - ARIMA models (e.g., `forecast::auto.arima()`, `stats::arima()`).
+     - Exponential smoothing (e.g., `forecast::ets()`).
+
+### 6. **Text Mining**
+   - **Text Preprocessing:**
+     - Tokenization, stemming, and stop words removal (e.g., `tm::Corpus()`, `tm::removeWords()`, `SnowballC::wordStem()`).
+   - **Text Analysis:**
+     - Term-document matrix creation (e.g., `tm::TermDocumentMatrix()`).
+     - Sentiment analysis (e.g., `syuzhet::get_sentiment()`, `tidytext::get_sentiments()`).
+
+### 7. **Automation & Reporting**
+   - **Batch Processing:**
+     - Running multiple scripts in sequence or in parallel (e.g., `source()`, `parallel::mclapply()`).
+   - **Email Notifications:**
+     - Sending emails from R (e.g., `mailR::send.mail()`).
+
+### 8. **Web Scraping**
+   - **Basic Web Scraping:**
+     - Extracting data from websites (e.g., `rvest::read_html()`, `rvest::html_nodes()`).
+   - **API Interaction:**
+     - Making API requests and handling JSON (e.g., `httr::GET()`, `jsonlite::fromJSON()`).
+
+### 9. **Geospatial Analysis**
+   - **Handling Spatial Data:**
+     - Reading and writing shapefiles (e.g., `sf::st_read()`, `sf::st_write()`).
+     - Mapping spatial data (e.g., `ggplot2::geom_sf()`, `tmap::tmap()`).
+
+### 10. **Utility Scripts**
+   - **File Management:**
+     - File and directory operations (e.g., `list.files()`, `file.rename()`).
+   - **Custom Functions:**
+     - A collection of custom utility functions for repetitive tasks.
+   - **Logging and Error Handling:**
+     - Logging script progress (e.g., `log4r::logger()`).
+     - Error handling and debugging (e.g., `tryCatch()`).
+
+### 11. **Data Import from Various Sources**
+   - **Database Connections:**
+     - Connecting to SQL, NoSQL, and cloud databases (e.g., `DBI::dbConnect()`, `RMySQL::dbConnect()`).
+   - **Cloud Storage Access:**
+     - Accessing AWS S3, Google Cloud Storage (e.g., `aws.s3::s3readRDS()`, `googleCloudStorageR::gcs_get_object()`).
+
+### 12. **Documentation and Version Control**
+   - **Script Documentation:**
+     - Using `roxygen2` for documenting functions.
+   - **Version Control:**
+     - Integration with Git (e.g., `usethis::use_git()`, `gert::git_commit()`).
+
